@@ -1,6 +1,6 @@
 # General Assembly
 
-## Project 2 (A MERN Stack App)
+### Project 3 (A MERN Stack App)
 
 Project 3 required us bringing together a full stack application that entailed making both the front-end and the backend.
 
@@ -8,7 +8,7 @@ Project 3 required us bringing together a full stack application that entailed m
 
 Our Minimal Viable Product (MVP) for this project was an Animal Factfile that offered authorisation and permission functionality. This meant members having the ability to add, delete, view and update animal fact cards and non-members only being able to browse a list of animal fact cards.
 
-To implement this authorisation functionality a sign up and login page was also required
+To implement this authorisation functionality a sign up and login page was also required.
 
 ## Link
 
@@ -16,54 +16,54 @@ To implement this authorisation functionality a sign up and login page was also 
 
 ## Technology Used
 
-#### Axios
+### Axios
 
-Used to make the HTTP requests and if successful receive a response that can then be displayed
+Used to make the HTTP requests and if successful receive a response that can then be displayed.
 
-#### React(JSX)
+### React(JSX)
 
-Used to render and visually display the data fetched from the API eg the animal name, species, continent, conservation status etc
+Used to render and visually display the data fetched from the API eg the animal name, species, continent, conservation status etc.
 
-#### Express
+### Express
 
 Web framework we used to carry out the requests required to fetch the data from our API, we were then able to use their library of mechanisms to respond appropriately to the response.
-Further to this we used express to connect to our local port, implement middleware functionality that helped carry out our authorisation function, incorporate error handling and use mongodDb
+Further to this we used express to connect to our local port, implement middleware functionality that helped carry out our authorisation function, incorporate error handling and use mongodDb.
 
-#### Mongodb
+### MongoDB
 
-The database management system we used to store and manage our data
+The database management system we used to store and manage our data.
 
-#### Font Awesome
+### Font Awesome
 
-This was used to add icons and worked alongside Bulma to include the icons within specific elements such as the input fields
+This was used to add icons and worked alongside Bulma to include the icons within specific elements such as the input fields.
 
-#### Bulma
+### Bulma
 
-The integration of Bulma in React meant we were able to utilise this styling framework to build our project
+The integration of Bulma in React meant we were able to utilise this styling framework to build our project.
 
-#### Insomnia
+### Insomnia
 
 Used throughout to ensure our `get`, `put`, `post`, `delete` fetch functions were being called correctly prior to deploying, making sure the API wasn't broken and was displayed with ease.
 
-#### Figma
+### Figma
 
 Used to wireframe the design of our project as well as define the potential user journeys.
 
-#### Github
+### GitHub
 
-Setting up individual branches from our newly created GitHub repository meant all three of us were able to collaboratively build the project and then fork and clone it once finished
+Setting up individual branches from our newly created GitHub repository meant all three of us were able to collaboratively build the project and then fork and clone it once finished.
 
-#### Trello
+### Trello
 
-We used trello to keep track of our progress, each day during stand up we would assign tasks and goals for the day and also review at the end of the day
+We used trello to keep track of our progress, each day during stand up we would assign tasks and goals for the day and also review at the end of the day.
 
 ## Time Frame
 
-This was a collaborative project, our instructors put us in groups of 3 and gave us a week to complete the project
+This was a collaborative project, our instructors put us in groups of 3 and gave us a week to complete the project.
 
 ## Instructional Team Brief
 
-The brief for this project can be seen in the README below and was designed to consolidate our learnings on APIs, by making both the backend and front-end of a full stack application
+The brief for this project can be seen in the README below and was designed to consolidate our learnings on APIs, by making both the backend and front-end of a full stack application.
 
 <div style="overflow: auto;">
     <img src="README Assets/README 1.png" alt="Overview and Technical Requirements brief" style="float:left; margin-right:10px;" width="350"/>
@@ -73,9 +73,9 @@ The brief for this project can be seen in the README below and was designed to c
 
 <br></br>
 
-### Planning
+## Planning, Process and Implementation
 
-#### Collaboration
+### Collaboration
 
 As a group and using the brief we worked together to wireframe, pseudocode and create user stories designed to help guide us in the building of our project - to do this we used figma.
 In the images below are our user stories where we defined both the member and a non-member user journeys, this enabled us to create wireframes that depicted both these user experiences also seen here.
@@ -93,7 +93,7 @@ The dynamic list format that trello offers (see below) meant that during our mor
 
 ![Trello board of tasks](</README Assets/Trello.png>)
 
-## Build/Code Process
+### Build/Code Process
 
 #### Foundation
 
@@ -101,11 +101,11 @@ Setting up the foundations of our full stack application was the key start to th
 
 Collaboratively we started by following MVC (Model, View, Controller)
 
-M - Model, we defined the structure of what our data would look like
+M - Model, we defined the structure of what our data would look like.
 
-V - View, connect insomnia for testing purposes AND build the route declarations eg `router.route("/api/animals").get(getAnimals);`
+V - View, connect insomnia for testing purposes AND build the route declarations eg `router.route("/api/animals").get(getAnimals);`.
 
-C - Controllers, create the files that carries out the functions to be called in the `router.ts`
+C - Controllers, create the files that carries out the functions to be called in the `router.ts`.
 
 <div style="overflow: auto;">
     <img src="README Assets/User Model.png" alt="User models code" style="float:left; margin-right:10px;" width="200"/>
@@ -136,7 +136,7 @@ Looking at one particular route `router.route("/api/animals/:animalId").get(getA
 
 There are multiple HTTP requests seen below that we used to retrieve, display, remove or update our data throughout our project including, POST, GET, DELETE, PUT
 
-![Route Handling](</SEB-Project-3-Backtend/README Assets/Router.png>)
+![Route Handling](</README Assets/Router.png>)
 
 #### (Completed independently)
 
@@ -154,9 +154,9 @@ By placing `secureRoute` before the `.delete` request in our router, as seen her
 3. If no token exists or is not verified using a secret key (only known by the server), there is an error or no payload ie the information being transmitted (username, userID or any additional data needed for authorisation) then the response is an ‘unauthorised’ message.
 
 4. If the token is valid, the user's ID is extracted. If the ID matches a user in the database, the user object is attached to the response locals, making user info easily accessible and avoiding repetitive database queries.
-5. The next function is then carried out - in the example below the create animal is called
+5. The next function is then carried out - in the example below the create animal is called.
 
-![Create Animal Route](</SEB-Project-3-Backtend/README Assets/Creating animal.png>)
+![Create Animal Route](</README Assets/Creating animal.png>)
 
 ## Challenges
 
@@ -166,28 +166,29 @@ The approach we took for writing the update animal function although it gave us 
 
 We used the add animal function as the foundation - although both followed the same animal model the HTTP requests are significantly different; PUT and POST respectively.
 
-Changing the HTTP request from POST to PUT did in fact update the existing animal that has the animalId called in the PUT request (see below)
+Changing the HTTP request from POST to PUT did in fact update the existing animal that has the animalId called in the PUT request (see below).
 
-![Update animal - animalId](</SEB-Project-3-Backtend/README Assets/Update.png>)
+![Update animal - animalId](</README Assets/Update.png>)
 
 However, instead of just updating the modified field it did not pre-populate the fields with the already defined values associated with that animalId but in fact rendered empty fields - to fix this we used a `useEffect` hook that used a `fetchAnimal` function
 to fetch the existing data of that specific animal from the server.
 
-After fetching the data, `setFormData(animalData)` is called, this updates the state with the fetched animal data
+After fetching the data, `setFormData(animalData)` is called, this updates the state with the fetched animal data.
 
-![Update animal - setFormData](</SEB-Project-3-Backtend/README Assets/Update FormData.png>)
+![Update animal - setFormData](</README Assets/Update FormData.png>)
 
-And because the `formData` state is bound to the input fields with the `value` attribute any fields not modified by the user remains the same - the code discussed here can be seen below
+And because the `formData` state is bound to the input fields with the `value` attribute any fields not modified by the user remains the same - the code discussed here can be seen below.
 
-![Update animal - animalId](</SEB-Project-3-Backtend/README Assets/Update Animal Function.png>)
+![Update animal - animalId](</README Assets/Update Animal Function.png>)
 
 ## Wins
 
 #### Home Page Hide and Show
 
-Although not overly complicated code I felt a big win for me during this project was consolidating my learning so far. Authentication within the project meant we had both users and non-users, allowing us to add conditionals (see below for an example) - this checks if the user variable is falsy. If it is, it renders the Link component with the text `Login` and a link to the `/login` route.
+Although not overly complicated code I felt a big win for me during this project was consolidating my learning so far. Authentication within the project meant we had both users and non-users, allowing us to add conditionals (see below for an example).
+This checks if the user variable is falsy, if it is, it renders the Link component with the text `Login` and a link to the `/login` route.
 
-![Conditional Nav](</SEB-Project-3-Backtend/README Assets/Conditional Nav.png>)
+![Conditional Nav](</README Assets/Conditional Nav.png>)
 
 Using this same logic we personalised the homepage by adding a conditional that changed the text on the homepage depending on whether the user variable is falsy.
 
@@ -195,7 +196,7 @@ The yellow circle highlights the code that only renders if there is a user objec
 
 The red circle highlights the code that renders only when a user object is not found and displays a welcoming message inviting the user to join the community and to sign up.
 
-![Homepage hide and show name conditional](</SEB-Project-3-Backtend/README Assets/Homepage code.png>)
+![Homepage hide and show name conditional](</README Assets/Homepage code.png>)
 
 ## Key Learnings and Takeaways
 
@@ -203,6 +204,7 @@ The red circle highlights the code that renders only when a user object is not f
 
 My last project followed a more driver, navigator dynamic however, with specific tasks assigned to specific members of the team this project required the use of Git far more.
 With minimal experience and confidence in using Git this was a big learning curve for me. Learning from a fellow team member, lots of practice and learning from my mistakes, I now feel more confident with creating branches, merge conflict management and pulling, merging and pushing code from my local branch to the main repository.
+My last project can be seen [here](https://seb-78project2.netlify.app/).
 
 #### Team Dynamic
 
@@ -235,7 +237,7 @@ Adding this feature in the future would be ideal.
 
 An additional feature we added was the like button that allowed users to 'like' an animal. Using the code below we were able to add a basic counter function that increased the number displayed by 1 when the button was clicked.
 
-![Like button function](</SEB-Project-3-Backtend/README Assets/Like.png>)
+![Like button function](</README Assets/Like.png>)
 
 With this function the displayed number will return to 0 every time the page is refreshed, ideally we would have liked to link the number of likes to the database specific to that animal so the likes get recorded.
 
